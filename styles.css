@@ -1,0 +1,144 @@
+/* --- Colores base pastel --- */
+:root {
+  --rosa: #f8c8dc;
+  --rosa-claro: #fde6ef;
+  --lila: #d8b7ff;
+  --gris-claro: #f3f3f3;
+  --texto: #444;
+  --blanco: #fff;
+}
+
+/* --- General --- */
+body {
+  background-color: var(--rosa-claro);
+  font-family: "Poppins", Arial, sans-serif;
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Contenedor general --- */
+.contenedor {
+  width: 1200px;
+  margin: 30px auto;
+  background-color: var(--blanco);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* --- Cabecera --- */
+header {
+  width: 100%;
+  background: linear-gradient(to right, var(--rosa), var(--lila));
+  color: var(--blanco);
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* --- Menú --- */
+.menu {
+  background-color: var(--lila);
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: var(--rosa);
+}
+
+/* --- Contenido principal + barra lateral --- */
+.contenido {
+  display: flex;
+  padding: 20px;
+  background-color: var(--gris-claro);
+  gap: 20px;
+}
+
+/* Contenido principal */
+.principal {
+  width: 70%;
+  background-color: var(--blanco);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.principal h2 {
+  text-align: center;
+  color: var(--lila);
+}
+
+/* Cuadrícula dentro del contenido principal */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.caja {
+  background-color: var(--rosa);
+  border: 2px solid var(--lila);
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.caja:hover {
+  transform: scale(1.05);
+  background-color: var(--rosa-claro);
+}
+
+/* Barra lateral */
+.lateral {
+  width: 30%;
+  background-color: var(--blanco);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lateral h2 {
+  color: var(--lila);
+}
+
+/* --- Footer --- */
+footer {
+  width: 100%;
+  background: linear-gradient(to right, var(--lila), var(--rosa));
+  color: var(--blanco);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
