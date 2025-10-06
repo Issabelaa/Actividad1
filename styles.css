@@ -1,4 +1,3 @@
-/* --- Colores base pastel --- */
 :root {
   --rosa: #f8c8dc;
   --rosa-claro: #fde6ef;
@@ -7,8 +6,6 @@
   --texto: #444;
   --blanco: #fff;
 }
-
-/* --- General --- */
 body {
   background-color: var(--rosa-claro);
   font-family: "Poppins", Arial, sans-serif;
@@ -16,8 +13,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* --- Contenedor general --- */
 .contenedor {
   width: 1200px;
   margin: 30px auto;
@@ -26,8 +21,6 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
-
-/* --- Cabecera --- */
 header {
   width: 100%;
   background: linear-gradient(to right, var(--rosa), var(--lila));
@@ -42,7 +35,6 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* --- Menú --- */
 .menu {
   background-color: var(--lila);
 }
@@ -73,7 +65,6 @@ header h1 {
   background-color: var(--rosa);
 }
 
-/* --- Contenido principal + barra lateral --- */
 .contenido {
   display: flex;
   padding: 20px;
@@ -81,7 +72,6 @@ header h1 {
   gap: 20px;
 }
 
-/* Contenido principal */
 .principal {
   width: 70%;
   background-color: var(--blanco);
@@ -95,7 +85,6 @@ header h1 {
   color: var(--lila);
 }
 
-/* Cuadrícula dentro del contenido principal */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -118,7 +107,6 @@ header h1 {
   background-color: var(--rosa-claro);
 }
 
-/* Barra lateral */
 .lateral {
   width: 30%;
   background-color: var(--blanco);
@@ -132,7 +120,6 @@ header h1 {
   color: var(--lila);
 }
 
-/* --- Footer --- */
 footer {
   width: 100%;
   background: linear-gradient(to right, var(--lila), var(--rosa));
@@ -142,3 +129,4 @@ footer {
   margin-top: 10px;
   font-size: 0.9em;
 }
+
